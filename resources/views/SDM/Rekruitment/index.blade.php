@@ -1,0 +1,96 @@
+@extends('template.main')
+@section('title', 'Rekruitment')
+
+@section('content')
+    <div id="main">
+        <div class="content-wrapper">
+            <section class="section">
+                <div class="row" id="table-striped">
+
+                    {{-- Judul --}}
+                    <div class="card-header">
+                        <h2 class="card-title text-center">Data Rekruitment</h2>
+                    </div>
+
+                    {{-- Data --}}
+                    <div class="row">
+                        <div class="col-7 mt-5 mb-2">
+                            <a href="{{ url('/master-data/SDM/Rekruitment/create') }}" class="btn btn-primary"
+                                role="button">
+                                Tambah Data Rekruitment
+                            </a>
+                        </div>
+                    </div>
+
+                    @if (session('status'))
+                        <div class="row mt-2">
+                            <div class="col">
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                    {{ session('status') }}
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    @endif
+
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-header">
+                                <h4 class="card-title text-center">Data Rekruitment</h4>
+                            </div>
+                            <div class="card-content">
+                                <!-- table striped -->
+                                <div class="table-responsive">
+                                    <table class="table table-striped mb-0">
+                                        <thead class="font-bold">
+                                            <tr>
+                                                <td>No</td>
+                                                <td>Nama Lengkap</td>
+                                                <td>No HP</td>
+                                                <td>Email</td>
+                                                <td>Alamat</td>
+                                                <td>Nama Pekerjaan</td>
+                                                <td>Aksi</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody style="text-align: justify">
+                                            @foreach ($rekruitment as $item)
+                                                <tr>
+                                                    <td>{{ $loop->iteration }}</td>
+                                                    <td>{{ substr($item->nama_lengkap, 0, 25) }}</td>
+                                                    <td>{{ $item->no_hp }}</td>
+                                                    <td>{{ $item->email }}</td>
+                                                    <td>{{ substr($item->alamat, 0, 35) }}</td>
+                                                    <td>{{ $item->daftarpekerjaan->nama_pekerjaan }}</td>
+                                                    <td>
+                                                        <a href="{{ url('/master-data/SDM/Rekruitment/' . $item->id) }}"
+                                                            class="btn btn-info"><span
+                                                                class="fa-fw select-all fas"></span>
+                                                        </a>
+                                                        <form method="POST"
+                                                            action="{{ url('/master-data/SDM/Rekruitment/' . $item->id) }}">
+                                                            @csrf
+                                                            @method('delete')
+                                                            <button type="submit" class="btn btn-danger"><span
+                                                                    class="fa-fw select-all fas"></span></button>
+                                                        </form>
+                                                        <a href="{{ url('/master-data/SDM/Rekruitment/' . $item->id) . '/edit' }}"
+                                                            class="btn btn-warning"><span
+                                                                class="fa-fw select-all fas"></span>
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            @endforeach
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+@endsection
