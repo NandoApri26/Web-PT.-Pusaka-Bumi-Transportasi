@@ -56,6 +56,7 @@ class Kernel extends HttpKernel
         'auth' => \App\Http\Middleware\Authenticate::class,
         'authpegawai' => \App\Http\Middleware\Authenticatepegawai::class,
         'authatasan' => \App\Http\Middleware\Authenticateatasan::class,
+        'authumum' => \App\Http\Middleware\Authenticateumum::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'auth.session' => \Illuminate\Session\Middleware\AuthenticateSession::class,
         'cache.headers' => \Illuminate\Http\Middleware\SetCacheHeaders::class,
@@ -68,5 +69,6 @@ class Kernel extends HttpKernel
         'admin' => \App\Http\Middleware\Admin::class,
         'pegawai' => \App\Http\Middleware\Pegawai::class,
         'atasan' => \App\Http\Middleware\Atasan::class,
+        'umum'=> \App\Http\Middleware\Umum::class,
     ];
 }

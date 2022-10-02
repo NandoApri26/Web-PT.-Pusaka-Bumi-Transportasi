@@ -47,6 +47,12 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 // Route::get('/informasi/{informasi}/edit', [InformasiController::class, 'edit']);
 // Route::get('/informasi/{informasi}', [InformasiController::class, 'update']);
 
+// Auth Public
+Route::get('/web-login', [FrontendController::class, 'login'])->name('web-login');
+Route::post('/web-login_store', [FrontendController::class, 'login_store']);
+Route::get('/web-register', [FrontendController::class, 'register'])->name('web-register');
+Route::post('/web-register_store', [FrontendController::class, 'register_store']);
+Route::get('/web-logout', [FrontendController::class, 'logout']);
 
 // Auth Admin
 Route::get('/login', [AuthController::class, 'login'])->name('login');
@@ -57,16 +63,16 @@ Route::get('/logout', [AuthController::class, 'logout']);
 
 
 // Auth Atasan
-Route::get('/login_atasan', [AuthatasanController::class, 'login'])->name('login');
+Route::get('/login_atasan', [AuthatasanController::class, 'login'])->name('login-atasan');
 Route::post('/login_store_atasan', [AuthatasanController::class, 'login_store']);
-Route::get('/register_atasan', [AuthatasanController::class, 'register'])->name('register');
+Route::get('/register_atasan', [AuthatasanController::class, 'register'])->name('register-atasan');
 Route::post('/register_store_atasan', [AuthatasanController::class, 'register_store']);
 Route::get('/logout_atasan', [AuthatasanController::class, 'logout']);
 
 // Auth Pegawai
-Route::get('/login_pegawai', [AuthpegawaiController::class, 'login'])->name('login');
+Route::get('/login_pegawai', [AuthpegawaiController::class, 'login'])->name('login-pegawai');
 Route::post('/login_store_pegawai', [AuthpegawaiController::class, 'login_store']);
-Route::get('/register_pegawai', [AuthpegawaiController::class, 'register'])->name('register');
+Route::get('/register_pegawai', [AuthpegawaiController::class, 'register'])->name('register-pegawai');
 Route::post('/register_store_pegawai', [AuthpegawaiController::class, 'register_store']);
 Route::get('/logout_pegawai', [AuthpegawaiController::class, 'logout']);
 
@@ -195,4 +201,17 @@ Route::group(['middleware' => ['authpegawai', 'pegawai']], function () {
     });
 });
 
-Route::get('/landingpage', [FrontendController::class, 'landingpage']);
+Route::get('/index', [FrontendController::class, 'index']);
+Route::get('/sejarah', [FrontendController::class, 'sejarah']);
+Route::get('/gcg', [FrontendController::class, 'gcg']);
+Route::get('/mutasiPublic', [FrontendController::class, 'mutasiPublic']);
+Route::get('/kontak', [FrontendController::class, 'kontak']);
+
+Route::group(['middleware' => ['authumum', 'umum']], function () {
+    Route::get('/mutasiPublic/detail/{mutasi}', [FrontendController::class, 'DetailMutasiPublic']);
+    Route::get('/rekruitmentPublic', [FrontendController::class, 'rekruitmentPublic']);
+    Route::get('/dokumentPublic', [FrontendController::class, 'dokumentPublic']);
+    Route::post('/dokumentPublic', [FrontendController::class, 'CreateDokumentPublic']);
+    Route::get('/pendaftaran', [FrontendController::class, 'pendaftaran']);
+    Route::post('/pendaftaran', [FrontendController::class, 'CreatePendaftaran']);
+});

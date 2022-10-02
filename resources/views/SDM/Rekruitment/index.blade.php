@@ -1,5 +1,5 @@
 @extends('template.main')
-@section('title', 'Rekruitment')
+@section('title', 'PT. Pusaka Bumi Transportasi || Rekruitment')
 
 @section('content')
     <div id="main">
@@ -66,8 +66,7 @@
                                                     <td>{{ $item->daftarpekerjaan->nama_pekerjaan }}</td>
                                                     <td>
                                                         <a href="{{ url('/master-data/SDM/Rekruitment/' . $item->id) }}"
-                                                            class="btn btn-info"><span
-                                                                class="fa-fw select-all fas"></span>
+                                                            class="btn btn-info"><span class="fa-fw select-all fas"></span>
                                                         </a>
                                                         <form method="POST"
                                                             action="{{ url('/master-data/SDM/Rekruitment/' . $item->id) }}">

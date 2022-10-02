@@ -1,5 +1,5 @@
 @extends('template.main')
-@section('title', 'Dashboard')
+@section('title', 'PT. Pusaka Bumi Transportasi || Dashboard')
 
 @section('content')
     <div id="main">

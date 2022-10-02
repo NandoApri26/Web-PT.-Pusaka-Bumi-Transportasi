@@ -1,5 +1,5 @@
 @extends('template.main')
-@section('title', 'Dokument Alir')
+@section('title', 'PT. Pusaka Bumi Transportasi || Create Dokument Alir')
 
 @section('content')
     {{-- Level Admin --}}
@@ -21,8 +21,7 @@
                         <div class="col-12 col-md-6 order-md-2 order-first">
                             <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a
-                                            href="{{ url('/master-data/SDM/admin') }}">Dashboard</a>
+                                    <li class="breadcrumb-item"><a href="{{ url('/master-data/SDM/admin') }}">Dashboard</a>
                                     </li>
                                     <li class="breadcrumb-item active" aria-current="page">Form Dokument Alir</li>
                                 </ol>
@@ -38,7 +37,7 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="card-title">Tambah Rekruitment</h4>
+                                    <h4 class="card-title">Tambah Dokument Alir</h4>
                                 </div>
                                 <div class="card-content">
                                     <div class="card-body">
@@ -160,7 +159,7 @@
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-header">
-                                    <h4 class="card-title">Tambah Rekruitment</h4>
+                                    <h4 class="card-title">Tambah Dokument Alir</h4>
                                 </div>
                                 <div class="card-content">
                                     <div class="card-body">

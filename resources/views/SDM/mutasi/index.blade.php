@@ -1,5 +1,5 @@
 @extends('template.main')
-@section('title', 'Mutasi')
+@section('title', 'PT. Pusaka Bumi Transportasi || Mutasi')
 
 @section('content')
     <div id="main">
@@ -65,8 +65,7 @@
                                                     <td>{{ $item->departement->departement }}</td>
                                                     <td>
                                                         <a href="{{ url('/master-data/SDM/mutasi/' . $item->id) }}"
-                                                            class="btn btn-info"><span
-                                                                class="fa-fw select-all fas"></span>
+                                                            class="btn btn-info"><span class="fa-fw select-all fas"></span>
                                                         </a>
                                                         <form method="POST"
                                                             action="{{ url('/master-data/SDM/mutasi/' . $item->id) }}">

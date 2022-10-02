@@ -1,5 +1,5 @@
 @extends('template.main')
-@section('title', 'Data Daftar Dekerjaan')
+@section('title', 'PT. Pusaka Bumi Transportasi || Create Data Daftar Dekerjaan')
 
 @section('content')
     <div id="main">
@@ -19,7 +19,8 @@
                     <div class="col-12 col-md-6 order-md-2 order-first">
                         <nav aria-label="breadcrumb" class="breadcrumb-header float-start float-lg-end">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="{{ url('/master-data/SDM/admin') }}">Dashboard</a></li>
+                                <li class="breadcrumb-item"><a href="{{ url('/master-data/SDM/admin') }}">Dashboard</a>
+                                </li>
                                 <li class="breadcrumb-item active" aria-current="page">Form Daftar Pekerjaan</li>
                             </ol>
                         </nav>
@@ -38,7 +39,8 @@
                             </div>
                             <div class="card-content">
                                 <div class="card-body">
-                                    <form class="form form-horizontal" action="{{ url('/master-data/SDM/Daftar-Pekerjaan') }}" method="POST"
+                                    <form class="form form-horizontal"
+                                        action="{{ url('/master-data/SDM/Daftar-Pekerjaan') }}" method="POST"
                                         enctype="multipart/form-data">
                                         @csrf
                                         <div class="form-body">
@@ -49,13 +51,15 @@
                                                 <div class="col-10 mt-3">
                                                     <div class="form-group">
                                                         <input type="text" class="form-control"
-                                                            placeholder=" Masukkan nama pekerjaan" id="nama_pekerjaan" name="nama_pekerjaan">
+                                                            placeholder=" Masukkan nama pekerjaan" id="nama_pekerjaan"
+                                                            name="nama_pekerjaan">
                                                     </div>
                                                 </div>
 
                                                 <div class="col-12 d-flex justify-content-end">
                                                     <button type="submit" class="btn btn-primary me-1 mb-1">Kirim</button>
-                                                    <a href="{{ url('/master-data/SDM/Daftar-Pekerjaan') }}" class="btn btn-primary me-1 mb-1" role="button">
+                                                    <a href="{{ url('/master-data/SDM/Daftar-Pekerjaan') }}"
+                                                        class="btn btn-primary me-1 mb-1" role="button">
                                                         Batal
                                                     </a>
                                                 </div>

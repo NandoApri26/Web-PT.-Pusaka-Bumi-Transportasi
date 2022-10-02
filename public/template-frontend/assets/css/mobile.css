@@ -1,0 +1,468 @@
+@media (max-width: 720px) {
+    body {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+    /* Awal Banner */
+    #Banner .bg-banner img {
+        width: 100%;
+        height: 350px;
+        margin-top: 100px;
+        object-fit: cover;
+    }
+    #Banner .carousel-caption h3 {
+        font-family: concert one;
+        font-size: 22px;
+        margin-bottom: -20px;
+        text-shadow: 3px 2px 1px black;
+    }
+    #Banner .fa-chevron-left,
+    .fa-chevron-right {
+        font-size: 30px;
+    }
+    #Banner .fa-chevron-left:hover,
+    .fa-chevron-right:hover {
+        color: #76d1ff;
+        font-size: 30px;
+    }
+    /* Akhir Banner */
+
+    /* Awal Informasi */
+    #Informasi .informasi h2,
+    #Sejarah-Perusahaan .Judul h2,
+    #Struktur-Organisasi .Judul h2,
+    #Tujuan-GCG .Judul h2,
+    #Landasan-Hukum .Judul h2,
+    #Struktur-GCG .Judul h2,
+    #Table-Mutasi .Judul h2 {
+        font-family: concert one;
+        font-size: 22px;
+        text-shadow: 2px 2px 1px grey;
+    }
+    #Informasi hr {
+        width: 105px;
+        text-align: left;
+        border: 0.8px;
+        border-style: solid;
+        border-color: #2a96ce;
+        margin-left: 0;
+        margin-top: -5px;
+    }
+    #Informasi .bg-Informasi,
+    #Sejarah-Perusahaan .bg-Sejarah-Perusahaan,
+    #Tujuan-GCG .bg-GCG,
+    #Konsep-GCG .bg-Konsep-GCG,
+    #Landasan-Hukum .bg-Landasan-Hukum {
+        background-color: #f2f2f2;
+        width: 100%;
+        height: auto;
+    }
+    #Informasi .bg-Informasi a,
+    #Visi-Misi .Judul {
+        font-family: concert one;
+        color: black;
+        text-decoration: none;
+    }
+    #Informasi .bg-Informasi a:hover {
+        font-family: concert one;
+        color: #2a96ce;
+        text-decoration: none;
+    }
+    #Informasi .bg-isi {
+        width: 100%;
+        border: 0.5px;
+        border-style: solid;
+        border-color: #2a96ce;
+        background-color: white;
+    }
+    #Informasi .bg-isi img {
+        width: 100%;
+        height: 280px;
+        object-fit: cover;
+    }
+    #Informasi .bg-isi h3 {
+        font-size: 18px;
+        font-family: concert one;
+    }
+    #Informasi .bg-isi h6 {
+        font-family: neuton;
+        text-align: justify;
+    }
+    /* Akhir Informasi */
+
+    /* Awal Jumbotrom */
+    #Jumbotron .jumbotron {
+        background-size: cover;
+        height: 320px;
+    }
+    #Jumbotron .Judul h3 {
+        font-family: concert one;
+        font-size: 22px;
+        color: white;
+        margin-top: 100px;
+        text-shadow: 2px 1px 1px black;
+    }
+    #Jumbotron .Judul h4 {
+        font-family: concert one;
+        font-size: 16px;
+        color: white;
+        margin-top: 20px;
+        text-align: left;
+        text-shadow: 2px 1px 1px black;
+    }
+    #Jumbotron .btn {
+        /* margin-top: 50px; */
+        background-color: #2a96ce;
+        font-family: concert one;
+        box-shadow: 3px 3px 1px black;
+        border-radius: 10px;
+    }
+    #Jumbotron .btn:hover {
+        /* margin-top: 50px; */
+        background-color: #76d1ff;
+        color: black;
+        font-family: concert one;
+        box-shadow: 3px 3px 1px black;
+        border-radius: 10px;
+    }
+    /* Akhir Jumbotron */
+
+    /* Awal Label */
+    #Label .breadcrumb,
+    #Label .breadcrumb i {
+        background-color: white;
+        font-size: 14px;
+        color: black;
+        margin-right: 30px;
+    }
+    #Label .breadcrumb a {
+        font-size: 14px;
+        font-family: concert one;
+        color: black;
+        text-decoration: none;
+    }
+    #Label .breadcrumb a:hover {
+        font-family: concert one;
+        font-size: 14px;
+        color: #2a96ce;
+        text-decoration: none;
+    }
+    #Label .active {
+        color: #2a96ce;
+        font-family: concert one;
+    }
+    #Label hr {
+        width: 450px;
+        text-align: left;
+        border: 0.8px solid;
+        border-color: #2a96ce;
+        margin-left: 15px;
+    }
+    /* Akhir Label */
+
+    /* Awal Sejarah-Perusahaan */
+    #Sejarah-Perusahaan .Judul hr {
+        width: 205px;
+        text-align: left;
+        border: 0.8px solid;
+        border-color: #2a96ce;
+        margin-top: 0px;
+    }
+    #Sejarah-Perusahaan .tahun a {
+        font-family: lato;
+        font-weight: bold;
+        font-size: 18px;
+        justify-content: center;
+        text-align: center;
+        margin-left: 120px;
+    }
+    #Sejarah-Perusahaan .sejarah h6 {
+        color: rgb(104, 104, 104);
+        font-family: neuton;
+        text-align: justify;
+        font-size: 14px;
+    }
+    #Sejarah-Perusahaan .fa-chevron-circle-left,
+    .fa-chevron-circle-right {
+        font-size: 25px;
+        margin-left: 30px;
+        color: #898989;
+        margin-bottom: 25px;
+    }
+    #Sejarah-Perusahaan .fa-chevron-circle-left:hover,
+    .fa-chevron-circle-right:hover {
+        font-size: 25px;
+        margin-left: 30px;
+        color: #2a96ce;
+    }
+    /* Akhir Sejarah Perusahaan */
+
+    /* Awal Struktur Organisasi */
+    #Struktur-Organisasi .Judul hr {
+        width: 235px;
+        text-align: left;
+        border: 0.8px;
+        border-style: solid;
+        border-color: #2a96ce;
+        margin-top: 0px;
+    }
+    #Struktur-Organisasi .Struktur img {
+        width: 100%;
+        height: 550px;
+        object-fit: cover;
+    }
+    #Struktur-GCG .Struktur img,
+    #Login .bg-Login img {
+        width: 100%;
+    }
+    /* Akhir Struktur Organisasi */
+
+    /* Awal Tujuan GCG */
+    #Tujuan-GCG .Judul hr {
+        width: 268px;
+        text-align: left;
+        border: 0.8px;
+        border-style: solid;
+        border-color: #2a96ce;
+        margin-top: 0px;
+    }
+    #Tujuan-GCG .Isi-GCG h6 {
+        font-family: neuton;
+        font-size: 14px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+    /* Akhir Tujuan GCG */
+
+    /* Awal Konsep-GCG */
+    #Konsep-GCG .Isi-Konsep h5 {
+        font-family: neuton;
+        font-size: 16px;
+        text-align: justify;
+        margin-top: 20px;
+    }
+    #Konsep-GCG .Isi-Konsep h4 {
+        font-family: concert one;
+        font-size: 18px;
+        text-shadow: 2px 1px 1px grey;
+        margin-top: 30px;
+    }
+    #Konsep-GCG .Isi-Konsep li,
+    #Landasan-Hukum .Isi-Landasan li {
+        font-family: neuton;
+        font-size: 16px;
+        text-align: justify;
+    }
+    /* Akhir Konsep-GCG */
+
+    /* Awal Landasan Hukum */
+    #Landasan-Hukum .Judul hr {
+        width: 175px;
+        text-align: left;
+        border: 0.8px;
+        border-style: solid;
+        border-color: #2a96ce;
+        margin-top: 0px;
+    }
+    /* Akhir Landasan Hukum */
+
+    /* Awal Struktur GCG */
+    #Struktur-GCG .Struktur img,
+    #Login .bg-Login img {
+        width: 100%;
+    }
+    #Struktur-GCG .Judul hr {
+        width: 140px;
+        text-align: left;
+        border: 0.8px;
+        border-style: solid;
+        border-color: #2a96ce;
+        margin-top: 0px;
+    }
+    /* Akhir Struktur GCG */
+
+    /* Awal Jumbotron Mutasi */
+    #Jumbotron-Mutasi .jumbotron,
+    #Rekruitment-Jumbotron .jumbotron {
+        background-size: cover;
+        object-fit: contain;
+        width: 100%;
+        height: 250px;
+    }
+    #Jumbotron-Mutasi .Judul h3,
+    #Rekruitment-Jumbotron .Judul h3 {
+        font-family: concert one;
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        margin-top: 130px;
+        text-shadow: 2px 1px 1px black;
+    }
+    #Table-Mutasi .Judul hr {
+        width: 320px;
+        text-align: left;
+        border: 0.8px;
+        border-style: solid;
+        border-color: #2a96ce;
+        margin-top: 0px;
+    }
+    /* Akhir Jumbotron Mutasi */
+
+    /* Awal Mutasi Karyawan */
+    #Table-Mutasi .table {
+        box-shadow: 3px 3px 1px black;
+    }
+    #Table-Mutasi .table th {
+        font-family: concert one;
+        font-size: 12px;
+        border: 1px solid black;
+        background-color: #2a96ce;
+    }
+    #Table-Mutasi .table td {
+        font-family: neuton;
+        font-size: 14px;
+        border: 1px solid black;
+        vertical-align: middle;
+    }
+    /* Akhir Mutasi Karyawan */
+
+    /* Awal Rekruitment */
+    #Rekruitment-Public .bg-Rekruitment,
+    #Rekruitment-User .bg-Rekruitment,
+    #Dokument-Alir .bg-Dokument-Alir {
+        background-color: rgb(255, 0, 0, 30%);
+        border-radius: 20px;
+        box-shadow: 2px 1px 1px gray;
+    }
+    #Rekruitment-Public .Text h4,
+    #Rekruitment-User .Text h4 {
+        font-family: concert one;
+        font-size: 28px;
+        margin-top: 20px;
+    }
+    #Rekruitment-Public .Text h5,
+    #Rekruitment-User .Text h5,
+    #Dokument-Alir .Text h5 {
+        font-family: concert one;
+        color: red;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    #Rekruitment-Public .Text .container p,
+    #Rekruitment-User .Text .container p,
+    #Dokument-Alir .Text .container p {
+        font-family: concert one;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    /* Akhir Rekruitment */
+
+    /* Hubungi Kami */
+
+    /* Akhir Hubungi Kami */
+
+    /* Awal Login */
+    #Login .Judul h2,
+    #Register .Judul h2 {
+        font-size: 24px;
+    }
+    #Login .bg-Login {
+        margin-top: 150px;
+        margin-bottom: 100px;
+        margin-right: 80px;
+        border-style: center;
+        border-color: #2a96ce;
+        border-radius: 20px;
+        box-shadow: 3px 3px 25px #2a96ce;
+    }
+    #Login .form-group label {
+        font-family: neuton;
+    }
+    /* Akhir Login */
+
+    /* Awal Register  */
+    #Register .gambar img {
+        width: 100%;
+        height: auto;
+        margin-top: 220px;
+    }
+    #Register .biodata {
+        margin-top: 50px;
+    }
+    /* Akhir Register */
+
+    /* Awal Footer */
+    #Footer .bg-footer {
+        background-color: #2a96ce;
+        width: 100%;
+    }
+    #Footer hr {
+        border: 0.8px;
+        border-style: solid;
+        border-color: white;
+        margin-left: 0;
+        margin-top: -5px;
+    }
+    #Footer a {
+        font-size: 16px;
+        font-family: concert one;
+        color: #4f4f4f;
+        text-decoration: none;
+    }
+    #Footer a:hover,
+    #Footer .copyright span {
+        font-size: 16px;
+        font-family: concert one;
+        color: white;
+        text-decoration: none;
+    }
+    #Footer .sitemap h4,
+    #Footer .Hubungi-Kami h4 {
+        font-family: concert one;
+        font-size: 22px;
+        color: white;
+    }
+    #Footer .sitemap ul {
+        margin-top: 10px;
+        margin-left: -38px;
+        float: left;
+        list-style: none;
+    }
+    #Footer .address-info i {
+        float: left;
+        display: table-cell;
+        width: 30px;
+        margin-left: -40px;
+        line-height: 25px;
+        font-size: 16px;
+        color: #4f4f4f;
+    }
+    #Footer .copyright {
+        font-size: 16px;
+        font-family: concert one;
+        color: #4f4f4f;
+    }
+    #Footer .address-info li {
+        list-style: none;
+    }
+    #Footer .address-info p,
+    #Rekruitment-Public .Text p,
+    #Rekruitment-User .Text p,
+    #Dokument-Alir .Text p {
+        font-family: concert one;
+        font-size: 16px;
+        margin-top: 15px;
+        color: #4f4f4f;
+        text-align: justify;
+    }
+    #Footer .sosmed i {
+        font-size: 25px;
+        margin: 0 12px 0 12px;
+        color: white;
+    }
+    #Footer .sosmed i:hover {
+        opacity: 0.5;
+    }
+}

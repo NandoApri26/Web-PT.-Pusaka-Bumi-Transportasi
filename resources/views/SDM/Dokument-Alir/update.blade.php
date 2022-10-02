@@ -1,5 +1,5 @@
 @extends('template.main')
-@section('title', 'Edit Dokument Alir ')
+@section('title', 'PT. Pusaka Bumi Transportasi || Edit Dokument Alir ')
 
 @section('content')
     <div id="main">

@@ -1,5 +1,5 @@
 @extends('template.main')
-@section('title', 'Data Rekruitment')
+@section('title', 'PT. Pusaka Bumi Transportasi || Create Data Rekruitment')
 
 @section('content')
     <div id="main">
@@ -104,10 +104,11 @@
                                                 </div>
                                                 <div class="col-10 mt-3">
                                                     <div class="form-group">
-                                                        <input type="radio" name="jkelamin" id="LK" value="Laki-Laki">
+                                                        <input type="radio" name="jkelamin" id="LK"
+                                                            value="Laki-Laki">
                                                         <label for="LK">Laki-Laki</label>
-                                                        <input type="radio" name="jkelamin" id="PR" value="Perempuan"
-                                                            class="ml-3">
+                                                        <input type="radio" name="jkelamin" id="PR"
+                                                            value="Perempuan" class="ml-3">
                                                         <label for="PR">Perempuan</label>
                                                     </div>
                                                 </div>
@@ -118,8 +119,7 @@
                                                 <div class="col-10 mt-3">
                                                     <div class="form-group">
                                                         <input type="text" class="form-control"
-                                                            placeholder=" Masukkan alamat" id="alamat"
-                                                            name="alamat">
+                                                            placeholder=" Masukkan alamat" id="alamat" name="alamat">
                                                     </div>
                                                 </div>
 
@@ -176,8 +176,8 @@
                                                 </div>
                                                 <div class="col-10 mt-3">
                                                     <div class="form-group">
-                                                        <input type="file" class="form-control" placeholder=" Masukkan CV"
-                                                            id="cv" name="cv">
+                                                        <input type="file" class="form-control"
+                                                            placeholder=" Masukkan CV" id="cv" name="cv">
                                                     </div>
                                                 </div>
 
@@ -186,8 +186,8 @@
                                                 </div>
                                                 <div class="col-10 mt-3">
                                                     <div class="form-group">
-                                                        <input type="file" class="form-control" placeholder=" Masukkan foto"
-                                                            id="foto" name="foto">
+                                                        <input type="file" class="form-control"
+                                                            placeholder=" Masukkan foto" id="foto" name="foto">
                                                     </div>
                                                 </div>
 
@@ -217,7 +217,8 @@
                                                 <div class="col-10 mt-3">
                                                     <div class="form-group">
                                                         <input type="file" class="form-control"
-                                                            placeholder=" Masukkan disnaker" id="disnaker" name="disnaker">
+                                                            placeholder=" Masukkan disnaker" id="disnaker"
+                                                            name="disnaker">
                                                     </div>
                                                 </div>
 
@@ -233,7 +234,8 @@
                                                 </div>
 
                                                 <div class="col-12 d-flex justify-content-end">
-                                                    <button type="submit" class="btn btn-primary me-1 mb-1">Kirim</button>
+                                                    <button type="submit"
+                                                        class="btn btn-primary me-1 mb-1">Kirim</button>
                                                     <a href="{{ url('/master-data/SDM/Rekruitment') }}"
                                                         class="btn btn-primary me-1 mb-1" role="button">
                                                         Batal
